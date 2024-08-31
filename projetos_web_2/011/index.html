@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 4px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: rgb(137, 216, 240);
+        }
+
+        td {
+            background-color: rgb(249, 253, 210);
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        table {
+            width: 30%;
+            margin: 15px auto;
+        }
+
+        .linhadupla {
+            background-color: rgb(231, 213, 52);
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+    </style>
+
+    <!-- CÉLULA -->
+</head>
+
+<body>
+    
+    <h1>EXERCÍCIOS COM TABELA HTML</h1>
+
+    <table> <!-- tabela 1 -->
+        <caption>1</caption>
+        <thead>
+            <tr>
+                <th colspan="2">CÉLULA</th>
+                <th colspan="2">CÉLULA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <td>CÉLULA</td>
+            <td>CÉLULA</td>
+            <td>CÉLULA</td>
+            <td>CÉLULA</td>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+    <table> <!-- tabela 2 -->
+        <caption>2</caption>
+        <thead>
+            <tr>
+                <th colspan="4">CÉLULA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th colspan="2">CÉLULA</th> <!-- O certo seria colocar esses dois no thead -->
+                <th colspan="2">CÉLULA</th>
+            </tr>
+            
+            <tr>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+    <table> <!-- tabela 3 -->
+        <caption>3</caption>
+        <thead>
+            <tr>
+                <th>CÉLULA</th>
+                <th>CÉLULA</th>
+                <th>CÉLULA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>CÉLULA</td>
+                <td colspan="2" class="linhadupla">CÉLULA</td>
+            </tr>
+
+            <tr>
+                <td>CÉLULA</td>
+                <td colspan="2" class="linhadupla">CÉLULA</td>
+
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td>CÉLULA</td>
+            <td>CÉLULA</td>
+            <td>CÉLULA</td>
+        </tfoot>
+    </table>
+    
+    
+    <table> <!-- tabela 4 -->
+        <caption>4</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">CÉLULA</th>
+                <td>CÉLULA</td>
+            </tr>
+            
+            <tr>
+                <td>CÉLULA</td>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="2">CÉLULA</th>
+                <td>CÉLULA</td>
+            </tr>
+
+            <tr>
+                <td>CÉLULA</td>
+            </tr>
+        
+        </tbody>
+
+    </table>
+
+    
+    <table> <!-- tabela 5 -->
+        <caption>5</caption>
+        <thead>
+            <tr>
+                <th>CÉLULA</th>
+                <th colspan="2">CÉLULA</th>
+                <th colspan="2">CÉLULA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3">CÉLULA</th>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+
+            <tr>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+
+            <tr>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+    <table> <!-- tabela 6 -->
+        <caption>6</caption>
+        <thead>
+            <tr>
+                <th colspan="2">CÉLULA</th>
+                <th>CÉLULA</th>
+                <th>CÉLULA</th>
+                <th>CÉLULA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4">CÉLULA</th>
+                <th rowspan="2">CÉLULA</th>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+
+            <tr>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">CÉLULA</th>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+
+            <tr>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+                <td>CÉLULA</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+
+</html>
